@@ -209,7 +209,7 @@ a:focus-visible {
 .contact p { overflow-wrap: anywhere; }
 
 /* ---------- Small screens ---------- */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   body { font-size: 0.8rem; }
 
   header { padding: 1.5rem 1rem; }
@@ -217,11 +217,21 @@ a:focus-visible {
   header p { font-size: 0.7rem; }
 
   .card { padding: 1rem; border-radius: 1rem; }
-  .pill { font-size: 0.95rem; }
+
+  
+  .pill { font-size: 0.85rem; padding: 0.1rem 0.4rem; }
   .pill-small { font-size: 0.7rem; }
+  .about-text .pill { display: block; min-width: 0; }
 
   .about { grid-template-columns: 1fr 7.5rem; }
-  .projects-body { grid-template-columns: 1fr 1.2fr; gap: 0.75rem; }
+
+  
+  .projects-body { grid-template-columns: 1fr; gap: 0.75rem; }
+
+  
+  .about-text p,
+  .projects-text p,
+  ul { text-align: left; }
 }
 
 @media (max-width: 340px) {
